@@ -79,13 +79,15 @@
 
 <h3 id="setting_up_a_git_repo">Setting up a git repo</h3>
 
-<p>Git works on a folder level. To set up a folder to work with git you need to open up the github app and select <code>File &gt; Add Local Repository ...</code>. You then need to select the folder you want to control with git.</p>
+<p>Git works on a folder level. To set up a folder to work with git you need to open up the Sourcetree app and select <code>File &gt; New / Clone</code>. You then need to select the Create Repository tab from the top menu. In the Desitnation Path browse to the folder that you want to control with Git.</p>
 
 <h3 id="excluding_some_files">Excluding some files</h3>
 
 <p>There are some other hidden files (e.g. those used by your operating system) that you don’t want to be version controlled. An example of these is the <code>.DS_Store</code> file on macs. We’ll talk more about this later - for now we’ll just quickly exclude them from our repository.</p>
 
 <p>To do this you need to change the settings on your repository.</p>
+
+<p>This won’t work with Sourcetree. If you try and do this email Nick.</p>
 
 <ol>
 <li>Open the settings tab of your repository.</li>
@@ -102,15 +104,17 @@
 <p>Adding files to a git repository is actually a two-stage process: you have to <strong>add</strong> them and then <strong>commit</strong> them. This is useful when you get more advanced, but we’ll usually do those things together for the time being.</p>
 <div class='exercise alert alert-info'><strong>Task:</strong>
 <ol>
-<li>Set up your <code>first_site</code> folder as a git repository: open up the github app, select <code>File &amp;gt; Add Local Repository ...</code> and select the <code>first_site</code> folder.</li>
+<li>Create a new folder that will be home to your personal project that you&#39;ll use throughout this course. (Or skip this if you already have something you want to use)</li>
 
-<li><strong>If you are on a mac</strong>, tell git to ignore your <code>.DS_Store</code> files: in the settings panel of the github app, add the line <code>.DS_Store</code> in the &#39;Ignored files&#39; section.</li>
+<li>Set up this folder as a git repository: open up Sourcetree, select <code>File &amp;gt; New/Clone ...</code> and select your folder in the destination path.</li>
 
-<li>Commit your work to the repository: in the &#39;Changes&#39; panel, click &#39;Select all&#39;, write a &#39;Commit Summary&#39; in the box (e.g. &quot;Created index.html&quot;) and click &#39;Commit&#39;.</li>
+<li>Add your files to the staging area one by one using the Add button. The files should move from the working tree (bottom) panel to the staged panel (top).</li>
 
-<li>Make some change to index.html (in Sublime Text)</li>
+<li>Commit your work to the repository using the Commit button. Type a commit message and hit commit.</li>
 
-<li>Go back to the &#39;Changes&#39; panel. Select and commit your changes, with a &#39;Commit Summary&#39; describing what you did.</li>
+<li>Make some change to index.html (in Sublime Text, or another file if you don&#39;t have an index.html file)</li>
+
+<li>Go back to Sourcetree. Select and commit your changes, with a &#39;Commit message&#39; describing what you did.</li>
 </ol>
 </div>
 	</div>
